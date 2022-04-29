@@ -92,62 +92,8 @@ position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  :hover{
-    .one{
-      animation: harakat1 1s infinite linear; 
-
-    }
-    .two{
-      animation: harakat2 1s infinite linear; 
-    }
-    
-  }
-
-
-  @keyframes harakat1{
-    10%{
-      transform:rotate(2deg) ;
-    }
-    15%{
-      transform:rotate(5deg) ;
-    
-    }
-    25%{
-      transform:rotate(4deg) ;
-    }
-    50%{
-      transform:rotate(2deg) ;
-    
-    }
-    100%{
-      transform:rotate(-4deg) ;
-    
-    }
-  }
-
-
-  @keyframes harakat2{
-    10%{
-      transform:rotate(170deg) ;
-
-    }
-    15%{
-      transform:rotate(165deg) ;
-
-    }
-    25%{
-      transform:rotate(160deg) ;
-    }
-    50%{
-      transform:rotate(165deg) ;
-
-    }
-    100%{
-      transform:rotate(174deg) ;
-
-    } 
-   }
-`;
+`
+  
 
 export const Btn1 = styled(buttons)`
 width: 295px;

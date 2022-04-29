@@ -8,7 +8,7 @@ export const Navbar = () => {
     const navigate = useNavigate()
 
     const [name,setName] = useState('asosiy')
-    const [count, setCount] = useContext(FozilInfo)
+    const [count,] = useContext(FozilInfo)
     const [heighting, setHeighting] = useState(0)
     window.addEventListener('scroll',() =>{
         setHeighting(window.scrollY)
@@ -35,12 +35,12 @@ export const Navbar = () => {
        <Container style={{background : heighting >= count && '#000000'}}>
            <Wrapper>
                <Logo onClick={getLogo} />
-               <Title style={{color:name == 'asosiy' && '#B09263'}} onClick={()=> setName('asosiy')} href='#1' >Asosiy sahifa</Title>
-               <Title style={{color:name == 'maqsad' && '#B09263'}} onClick={()=> setName('maqsad')}  href='#2' >Loyiha maqsadi</Title>
-               <Title style={{color:name == 'mutahasis' && '#B09263'}} onClick={()=> setName('mutahasis')}  href='#3' >Mutaxassisliklar</Title>
-               <Title style={{color:name == 'faq' && '#B09263'}} onClick={()=> setName('faq')} href='#4' >FAQ</Title>
-               <Title style={{color:name == 'qabul' && '#B09263'}} onClick={getQabul} >Qabul</Title>
-               <Btn  style={{borderColor:name == 'register' && '#B09263', color:name == 'register' && '#B09263'}} onClick={getSinov} >Ro’yhatdan o’tish</Btn>
+               <Title style={{color:name === 'asosiy' && '#B09263'}} onClick={()=> setName('asosiy')} href='#1' >Asosiy sahifa</Title>
+               <Title style={{color:name === 'maqsad' && '#B09263'}} onClick={()=> setName('maqsad')}  href='#2' >Loyiha maqsadi</Title>
+               <Title style={{color:name === 'mutahasis' && '#B09263'}} onClick={()=> setName('mutahasis')}  href='#3' >Mutaxassisliklar</Title>
+               <Title style={{color:name === 'faq' && '#B09263'}} onClick={()=> setName('faq')} href='#4' >FAQ</Title>
+               <Title style={{color:name === 'qabul' && '#B09263'}} onClick={getQabul} >Qabul</Title>
+               <Btn  style={{borderColor:name === 'register' && '#B09263', color:name === 'register' && '#B09263'}} onClick={getSinov} >Ro’yhatdan o’tish</Btn>
            </Wrapper>
        </Container>
     )

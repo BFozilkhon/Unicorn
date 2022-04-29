@@ -3,7 +3,7 @@ import { FozilInfo } from '../../Context/count';
 import { ContainerImg, MainLogo, Title } from './style';
 
 export const HomeOpener = () => {
-    const [count, setCount] = useContext(FozilInfo)
+    const [, setCount] = useContext(FozilInfo)
         window.addEventListener('scroll', ()=>{
             setCount(window.screen.height -700)
         })

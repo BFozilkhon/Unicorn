@@ -7,13 +7,13 @@ export const Savollar = () => {
         <div id='4'>
             <Header><span style={{color:'#B09263'}}>“Unicorn” ta'lim</span> loyihasi haqida tez- <br/>tez so'raladigan savollar</Header>        
            <Flexing>
-               <Item style={{opacity: title == '1' && '1', borderBottom:title == '1' && '3px solid #B09263'  }} onClick={()=> setTitle('1')}>General</Item>
-               <Item style={{opacity: title == '2' && '1', borderBottom:title == '2' && '3px solid #B09263' }} onClick={()=> setTitle('2')}>Payments</Item>
-               <Item style={{opacity: title == '3' && '1', borderBottom:title == '3' && '3px solid #B09263' }} onClick={()=> setTitle('3')}>Returns</Item>
-               <Item style={{opacity: title == '4' && '1', borderBottom:title == '4' && '3px solid #B09263' }} onClick={()=> setTitle('4')}>Refunds</Item>
-               <Item style={{opacity: title == '5' && '1', borderBottom:title == '5' && '3px solid #B09263' }} onClick={()=> setTitle('5')}>Account</Item>
-               <Item style={{opacity: title == '6' && '1', borderBottom:title == '6' && '3px solid #B09263' }} onClick={()=> setTitle('6')}>Subscription</Item>
-               <Item style={{opacity: title == '7' && '1', borderBottom:title == '7' && '3px solid #B09263' }} onClick={()=> setTitle('7')}>Media Policy</Item>
+               <Item style={{opacity: title === '1' && '1', borderBottom:title === '1' && '3px solid #B09263'  }} onClick={()=> setTitle('1')}>General</Item>
+               <Item style={{opacity: title === '2' && '1', borderBottom:title === '2' && '3px solid #B09263' }} onClick={()=> setTitle('2')}>Payments</Item>
+               <Item style={{opacity: title === '3' && '1', borderBottom:title === '3' && '3px solid #B09263' }} onClick={()=> setTitle('3')}>Returns</Item>
+               <Item style={{opacity: title === '4' && '1', borderBottom:title === '4' && '3px solid #B09263' }} onClick={()=> setTitle('4')}>Refunds</Item>
+               <Item style={{opacity: title === '5' && '1', borderBottom:title === '5' && '3px solid #B09263' }} onClick={()=> setTitle('5')}>Account</Item>
+               <Item style={{opacity: title === '6' && '1', borderBottom:title === '6' && '3px solid #B09263' }} onClick={()=> setTitle('6')}>Subscription</Item>
+               <Item style={{opacity: title === '7' && '1', borderBottom:title === '7' && '3px solid #B09263' }} onClick={()=> setTitle('7')}>Media Policy</Item>
            </Flexing>
 
 

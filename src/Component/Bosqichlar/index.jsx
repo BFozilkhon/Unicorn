@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './Card'
-import { Btn, Container, Flexing, Wrapper, Title, Relativing, Btn1, Btn2, Words } from './style'
+import {  Container, Flexing, Wrapper, Title, Relativing, Btn1, Btn2, Words } from './style'
 
 export const Bosqichlar = () => {
     return (
